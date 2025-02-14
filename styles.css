@@ -1,0 +1,88 @@
+/* general stylying */
+body{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #2E3192 , #009245) ;
+
+}
+/* body and app container */
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius:15px ;
+    backdrop-filter:blur(50px);
+    height:auto ;
+    width:45vw ;
+    box-shadow:4px 5px 6px  #EEE;
+}
+/* title */
+H1{
+    color: #EEE;
+}
+.header{
+    text-align: center;
+    padding: 10px; 
+    font: size 1.5em; ;
+    font-weight: 900;
+    width: auto;
+    border-bottom: 0.5 solid whitesmoke;
+    margin-bottom: 10px;
+}
+/* add-task button and input field */
+.addTask{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+}
+input{
+    padding: 7px;
+    border-radius: 10px ;
+}
+button:hover{
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 2px 2px #EEE;
+}
+button{
+    background: linear-gradient(50deg, #2E3192 , #009245) ;
+    color:black;
+    padding:4px ;
+    border-radius:10px ;
+    width: auto;
+}
+/* todo-list */
+ul{
+    list-style: none;
+    padding: 15px;
+}
+li{
+   display: flex;
+   justify-content: space-between;
+   border: 2px solid white;
+   border-radius: 5px;
+   padding: 8px ;
+   margin-bottom: 7px;
+}
+/* responsive design */
+@media (max-width:768px)
+
+.container{
+    padding: 20px 15px;
+}
+.addTask{
+    flex-direction: inherit;
+
+}
+button{
+    padding: 10px 15px;
+    font-size: 0.8rem;
+
+}
+li{
+    flex-direction: inherit;
+    align-items: flex-start;
+}
+
